@@ -1,0 +1,17 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "everest.lan" {
+                        type master;
+                        file "/etc/bind/tp.zone.d";
+};
+
+zone "0.0.0.2.0.0.0.0.0.8.b.d.1.0.0.2.ip6.arpa" {
+                        type master;
+                        file "/etc/bind/tp.zone.i";
+};
